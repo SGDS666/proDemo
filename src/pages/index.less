@@ -1,0 +1,63 @@
+.infocard {
+  transition: all 0.2s;
+  animation-fill-mode: none;
+  user-select: none;
+  cursor: pointer;
+  &:hover {
+    transform: translateY(-10%);
+  }
+  &:active {
+    transform: scale(98%);
+  }
+}
+.standardFilterConditions {
+  display: flex;
+  width: 100%;
+  // padding-top: 8px;
+  // padding-bottom: 16px;
+  // border-bottom: 1.5px dashed @border-color-split;
+}
+
+.stardardFilter {
+  position: relative;
+  min-width: 108px;
+  margin-right: 16px;
+}
+
+.stardardFilter:hover {
+  background-color: aliceblue;
+}
+
+.stardardFilter:checked {
+  background-color: @text-color-secondary;
+}
+
+.stardardFilterSelected {
+  width: 100%;
+  padding-left: 12px;
+  color: @primary-color;
+  font-weight: bold;
+  text-align: center;
+}
+
+.stardardDateFilterSelected {
+  width: 100%;
+  color: @primary-color;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tbl-operator {
+  padding: 15px 12px 15px 10px;
+  // background-color: @info-color-deprecated-bg;
+  border: 1px solid @info-color-deprecated-border;
+}
+
+.table-row-action-button {
+  display: none;
+}
+
+.editable-row:hover .table-row-action-button {
+  display: inline;
+  margin-right: 4px;
+}

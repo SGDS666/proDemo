@@ -1,0 +1,16 @@
+{
+  "editor.codeActionsOnSave": {
+    // #每次保存的时候将代码按eslint格式进行修复
+    "source.fixAll.eslint": true,
+    "eslint.autoFixOnSave": true
+  },
+  "[less]": {
+    "editor.suggest.insertMode": "replace",
+    "gitlens.codeLens.scopes": [
+      "document"
+    ],
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.tabWidth": 2
+}

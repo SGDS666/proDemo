@@ -1,0 +1,221 @@
+.mainLayout {
+  display: flex;
+  width: 100%;
+  box-sizing: 'border-box';
+  padding-top: 0px;
+  padding-bottom: 0px;
+  min-height: 90vh;
+  overflow: auto;
+  background-color: @menu-bg;
+  .leftLayout {
+    min-width: 256px;
+    max-width: 256px;
+    border-right: @border-width-base @border-style-base @border-color-split;
+    :global {
+      .ant-menu-inline {
+        border: none;
+      }
+      .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+        font-weight: bold;
+      }
+    }
+  }
+  .middle {
+    min-width: 460px;
+    max-width: 460px;
+  }
+  .right {
+    flex: 1;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 8px;
+    padding-left: 0px;
+    .title {
+      margin-bottom: 12px;
+      color: @heading-color;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+  :global {
+    .ant-list-split .ant-list-item:last-child {
+      border-bottom: 1px solid @border-color-split;
+    }
+  }
+}
+:global {
+  .ant-list-item-meta {
+    // 账号绑定图标
+    .taobao {
+      display: block;
+      color: #ff4000;
+      font-size: 48px;
+      line-height: 48px;
+      border-radius: @border-radius-base;
+    }
+    .dingding {
+      margin: 2px;
+      padding: 6px;
+      color: #fff;
+      font-size: 32px;
+      line-height: 32px;
+      background-color: #2eabff;
+      border-radius: @border-radius-base;
+    }
+    .alipay {
+      color: #2eabff;
+      font-size: 48px;
+      line-height: 48px;
+      border-radius: @border-radius-base;
+    }
+  }
+
+  // 密码强度
+  font.strong {
+    color: @success-color;
+  }
+  font.medium {
+    color: @warning-color;
+  }
+  font.weak {
+    color: @error-color;
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .main {
+    flex-direction: column;
+    .leftLayout {
+      width: 100%;
+      border: none;
+    }
+    .right {
+      padding: 40px;
+    }
+  }
+}
+
+.readFont {
+  font-size: 16px;
+  color: #999999;
+}
+
+.unreadFont {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+.mailListContainer {
+  overflow: auto;
+  padding: 12px 12px;
+  border-radius: 4px;
+}
+
+.mailListContainer > .ant-pro-list .ant-pro-list-row {
+  padding: 0 4px 0 8px;
+}
+
+.mailListTree
+  > .ant-tree.ant-tree-block-node
+  .ant-tree-list-holder-inner
+  .ant-tree-node-content-wrapper {
+  flex: none;
+  white-space: nowrap;
+  padding: 2px 0px;
+}
+
+.mailListLoadingContainer {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.item {
+  padding-right: 0px;
+  padding-left: 0px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  .meta {
+    width: 100%;
+  }
+
+  .avatar {
+    margin-top: 4px;
+    background: @component-background;
+  }
+  .iconElement {
+    font-size: 32px;
+  }
+
+  &.selected {
+    background-color: #1eaaf5;
+  }
+  &.read {
+    opacity: 0.5;
+  }
+  &:last-child {
+    border-bottom: 0;
+  }
+  &:hover {
+    background: @primary-1;
+  }
+
+  .description {
+    font-size: 12px;
+    line-height: @line-height-base;
+  }
+  .datetime {
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: @line-height-base;
+  }
+  .extra {
+    float: right;
+    margin-top: -1.5px;
+    margin-right: 0;
+    color: @text-color-secondary;
+    font-weight: normal;
+  }
+}
+
+.title {
+  display: 'inline-block';
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.description {
+  font-size: 12px;
+  line-height: @line-height-base;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.from {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.split-row-select-active {
+  background-color: #1262bd;
+}
+
+.mailSelectActive {
+  background-color: #1262bd;
+}
+
+.contentStyle {
+  height: 300;
+  min-height: 300;
+  max-height: 400;
+  overflow: hidden;
+}

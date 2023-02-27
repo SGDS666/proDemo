@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklaifaxin_web=self.webpackChunklaifaxin_web||[]).push([[6438],{96438:function(f,n,t){t.r(n),t.d(n,{default:function(){return a}});var l=t(85170),u=t(22196),E=t(43010);function a(){var e=(0,u.useOutletContext)();return(0,E.jsx)(u.Outlet,{context:e})}}}]);

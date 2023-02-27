@@ -1,0 +1,39 @@
+.mycard {
+  width: 30%;
+  min-width: 250px;
+  // min-width: 100px;
+  height: 160px;
+  // border: wheat 1px solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-left: 2vw;
+  margin: 0px 5px 10px 5px;
+  font-size: large;
+  font-weight: bold;
+  flex-grow: 1;
+
+  .title {
+    display: flex;
+    font-size: 25px;
+
+    div:first-child {
+      margin-right: 10px;
+    }
+  }
+
+  .value {
+    width: 100%;
+    margin: 10px 0;
+    font-size: 23px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .option {
+    display: flex;
+  }
+}

@@ -1,0 +1,184 @@
+.container-editable-tree {
+  width: '100%';
+  // height: 600px;
+}
+
+.ant-tree-list {
+  padding: 8px 0;
+  overflow-x: hidden;
+}
+
+.ant-tree .ant-tree-treenode {
+  position: relative;
+  display: flex;
+  height: 36px;
+  padding: 2px 0px;
+  color: #31415f;
+  // font-size: 16px; // 字号
+}
+
+.ant-tree .ant-tree-treenode:hover {
+  background-color: #f5f6fa;
+}
+
+.ant-tree .ant-tree-treenode:hover .tree-leaf .action {
+  display: block;
+}
+
+.tree-leafa .actiona {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 36px;
+  line-height: 36px;
+  margin-right: -300px;
+}
+
+.tree-leaf .action {
+  display: none;
+  text-align: right;
+}
+
+.tree-leaf .name {
+  width: 100px;
+  overflow: hidden;
+  display: inline-block;
+  text-align: left;
+  text-overflow: ellipsis;
+}
+
+.tree-leaf .action .icon {
+  margin-right: 4px;
+}
+
+.tree-leaf .action .icon:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.ant-tree .ant-tree-treenode-selected {
+  background-color: #bae7ff;
+}
+
+.ant-tree-indent-unit {
+  width: 8px;
+}
+
+.ant-tree .ant-tree-node-content-wrapper:hover,
+.ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected {
+  background: none;
+}
+
+.tree-leaf {
+  width: 136px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: absolute;
+}
+
+.ant-collapse-content > .ant-collapse-content-box {
+  padding: 0px;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  position: relative;
+  padding: 11px 16px;
+  padding-left: 40px;
+  color: rgba(0, 0, 0, 0.85);
+  line-height: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-and-icon {
+  display: inline-block;
+  position: relative;
+  padding-right: 24px;
+  text-align: left;
+  height: 24px;
+  line-height: 24px;
+  vertical-align: middle;
+}
+
+.condition-and {
+  display: inline-block;
+  position: relative;
+  padding-right: 24px;
+  text-align: left;
+  height: 24px;
+  line-height: 24px;
+  vertical-align: middle;
+}
+
+.condition-and:before {
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  content: ' ';
+  width: 100%;
+  height: 1px;
+  border-top: 1px dashed #e1e1e1;
+}
+
+.condition-or {
+  position: relative;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+}
+
+.condition-or:before {
+  position: absolute;
+  left: 50%;
+  display: inline-block;
+  content: ' ';
+  width: 1px;
+  height: 50px;
+  border-right: 1px dashed #e1e1e1;
+}
+
+.condition-or span,
+.condition-and span {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  line-height: 18px;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #fff;
+  z-index: 1;
+  color: #888888;
+}
+
+.btn-icon-add {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  border: 1px solid #444444;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.salesExtra {
+  display: inline-block;
+  margin-right: 24px;
+  a {
+    margin-left: 24px;
+    color: @text-color;
+    &:hover {
+      color: @primary-color;
+    }
+    &.currentDate {
+      color: @primary-color;
+    }
+  }
+}

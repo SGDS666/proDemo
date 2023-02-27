@@ -1,0 +1,123 @@
+.both-up {
+  //从下往上出生动画
+  //
+  animation-name: Both-up;
+  animation-fill-mode: both;
+  animation-duration: 0.4s;
+  animation-timing-function: ease;
+
+  @keyframes Both-up {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+}
+
+.both-down {
+  //从上往下出生动画
+
+  animation-name: Both-down;
+  animation-fill-mode: both;
+  animation-duration: 0.4s;
+  animation-timing-function: ease;
+
+  @keyframes Both-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-50%);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+}
+
+.both-left {
+  //从右往左生动画
+
+  animation-name: Both-left;
+  animation-fill-mode: both;
+  animation-duration: 0.4s;
+  animation-timing-function: ease;
+
+  @keyframes Both-left {
+    0% {
+      opacity: 0;
+      transform: translateX(50%);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+}
+
+.both-right {
+  //从左往右生动画
+
+  animation-name: Both-right;
+  animation-fill-mode: both;
+  animation-duration: 0.4s;
+  animation-timing-function: ease;
+
+  @keyframes Both-right {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+}
+
+.both-big {
+  //从小到大
+  animation-name: Both-big;
+  animation-fill-mode: both;
+  animation-duration: 0.4s;
+  animation-timing-function: ease;
+
+  @keyframes Both-big {
+    0% {
+      opacity: 0;
+      transform: scale(0%);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(100%);
+    }
+  }
+}
+
+.both-small {
+  //从大到小
+  animation-name: Both-small;
+  animation-fill-mode: both;
+  animation-duration: 0.4s;
+  animation-timing-function: ease;
+
+  @keyframes Both-small {
+    0% {
+      opacity: 0;
+      transform: scale(150%);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(100%);
+    }
+  }
+}
